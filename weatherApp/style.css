@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 120%;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://source.unsplash.com/random/?city,night');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card {
+  color: white;
+  background-color: rgba(83, 81, 81, 0.634);
+  padding: 1.5rem;
+  margin: 1.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  height: 30rem;
+  max-width: 420px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  background-color: rgba(237, 233, 233, 0.47);
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-size: 20px;
+  width: 70%;
+  border: none;
+  outline: none;
+  padding: 0.8rem;
+  margin: 20px;
+  border-radius: 28px;
+}
+.search-bar:hover {
+  background-color: rgba(185, 182, 182, 0.446);
+}
+.search-button {
+  background-image: url('/search.png');
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.search-button:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+h1.temp {
+  margin: 0;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+.weather.loading::after {
+  visibility: visible;
+  text-align: center;
+  font-weight: 900;
+  font-size: larger;
+  content: 'Loading...';
+  color: white;
+  /* position: absolute; */
+}
